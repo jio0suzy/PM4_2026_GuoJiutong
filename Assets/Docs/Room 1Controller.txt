@@ -1,0 +1,45 @@
+---
+
+Implement only what is specified in this document. If the component already exists, evaluate the diff and update or add the new features. If something is unclear, ask me clarifying questions explicitly before implementing.
+
+---
+
+
+
+This is a unity controller for a simple interaction. It uses the Trigger Sensor existing in the project. When the player is detected it plays the interaction.
+
+
+
+The interaction will have several layered feedbacks each with its own DoTween animation. For each DoTween animation expose the curve in the inspector. 
+
+
+
+Fields: 
+
+
+
+- Audio Source
+
+- pitch entry duration
+
+- pitch entry curve
+
+- Ceiling Emissive Material
+
+
+
+Methods: 
+
+
+
+- On Play 
+
+- the pitch of the audio source goes from 0 to 1 over some duration (exposed) and with the aforementioned curve.
+
+- I would like the scene lighting to gradually turn on following the same behavior. It is comprised of the following variables: 
+
+- Intensity Multiplier of Env Lighting - goes from 0 to 1 
+
+- Intensity Multiplier of Env Reflections - goes from 0 to 1
+
+- Emissive Color Intensity of Ceiling Material - goes from - 10 to 5
