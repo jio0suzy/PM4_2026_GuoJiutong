@@ -1,6 +1,35 @@
 {
-    "version": 0,
+    "version": 1,
     "name": "New Actions",
-    "maps": [],
+    "maps": [
+        {
+            "name": "midi",
+            "id": "7bea3492-4fff-4318-9873-0614d6616a8d",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "631604c4-8616-4541-a708-83266a9d9186",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "59bb37b3-916c-48b5-87e7-f6973033ff32",
+                    "path": "<MidiDevice>/anyNoteVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
     "controlSchemes": []
 }
